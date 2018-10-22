@@ -11,7 +11,7 @@ Make sure you have Docker installed on the RaspberryPi. You probably want to run
 After that, you can easily run the version I have in Docker Hub (no need to even clone this repo). Replace `YOURCALLHERE` with your HAM callsign (e.g. mine is KK6GIP) and `YOURPASSWORDHERE` with your APRS password (generate one [here](http://apps.magicbug.co.uk/passcode/)) in the below command.
 
     docker pull johnboiles/pi-rtlsdr-igate
-    docker run --privileged -e MYCALL=YOURCALLHERE -e APRS_PASSWORD=YOURPASSWORDHERE -it
+    docker run --privileged -e MYCALL=YOURCALLHERE -e APRS_PASSWORD=YOURPASSWORDHERE -it johnboiles/pi-rtlsdr-igate
 
 You now have a functioning IGate on your RaspberryPi! If you also want to send a beacon with the position of your IGate you can pass a latitude and longitude via environment variables.
 
